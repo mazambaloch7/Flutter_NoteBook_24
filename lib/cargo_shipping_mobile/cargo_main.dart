@@ -16,6 +16,8 @@ class _CargoShopingMainPageState extends State<CargoShopingMainPage> {
   Color _secondaryColor = Color.fromRGBO(154,134,200,1);
   Color _accentColor = Color.fromRGBO(103,40,255,1);
 
+  bool _openShipHistory = false;
+
   
   @override
   Widget build(BuildContext context) {
@@ -388,7 +390,311 @@ Container(
                   )
                 ],
               ),
-            )
+            ),
+
+
+            //copy the whole container //except remove the button...
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 16),
+               decoration: BoxDecoration(
+                color: Colors.grey[100],
+                border: Border.all(color: Colors.grey),
+                borderRadius: BorderRadius.circular(4)
+              ),
+              
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Padding(padding: EdgeInsets.all(12.0),
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      SizedBox(
+                        width:58,
+                        child: Text("Track\nNumber",
+                        style: TextStyle(
+                          color: Colors.grey
+                        ),
+                        ),
+                      ),
+                      SizedBox(
+                        width: 16,
+                      ),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text('TRACKING NUMBER',
+                              style: TextStyle(
+                                  color: Colors.grey
+                              ),
+                            ),
+
+                            Padding(
+                              padding: const EdgeInsets.symmetric(vertical: 12.0),
+                              child: Row(
+                                children: [
+
+                                  Text('HCM-0324567891',
+                                    style: TextStyle(
+                                        color: Colors.cyan
+                                    ),
+                                  ),
+
+                                  SizedBox(
+                                    width: 8,
+                                  ),
+
+                                 const  Icon(Icons.ios_share, size: 18,),
+                                ],
+                              ),
+                            ),
+                            const Text('Shipping Start date: Oct 18, 2000',
+                              style: TextStyle(
+                                color: Colors.grey,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
+                  ),
+
+                  Padding(
+                    padding: EdgeInsets.all(12.0),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        const SizedBox(
+                          width: 58,
+                          child: Text(
+                            "Services",
+                          style: TextStyle(
+                            color: Colors.grey
+                          ),
+                          ),
+                        ),
+
+                        SizedBox(width: 16,),
+
+                        Expanded(child: Column(
+                        children: [
+                          const Text(
+                            'OCEAN FREIGHT',
+                            style: TextStyle(
+                              color: Colors.grey,
+                              fontWeight: FontWeight.bold
+                            ),
+                          ),
+                          //copy past
+                          const Text(
+                            '\$850',
+                            style: TextStyle(
+                                height: 1.8,
+                                fontSize: 24,
+                                fontWeight: FontWeight.bold
+                            ),
+                          ),
+
+
+
+                          //past here
+                          //remove the const the error will be gone
+                           Text(
+                            'View Details ',
+                            style: TextStyle(
+                              decoration: TextDecoration.underline,
+                              color: _accentColor,
+
+                            ),
+                          ),
+
+
+                        ],
+                        ),
+                        )
+                      ],
+                    ),
+
+                  ),
+
+                  //this button is below that container so i want to add in side the
+                  // container copy past here
+                  // remove the padding
+                  Container(
+                     decoration: BoxDecoration(
+                      color: Colors.white,
+                      border: Border.all(
+                        color: Colors.grey[200]!,
+                      ),
+                       borderRadius: BorderRadius.only(
+                         bottomLeft: Radius.circular(4),
+                         bottomRight: Radius.circular(4),
+                       )
+                    ),
+                    child: Center(
+                      child: IconButton(
+                        onPressed: (){
+                          setState(() {
+                            _openShipHistory = !_openShipHistory;
+                          });
+                        },
+                          icon: Icon(
+                            _openShipHistory?  Icons.keyboard_arrow_down : Icons.keyboard_arrow_up ,
+                        color: Colors.grey,)
+                      ),
+                    ),
+                  )
+
+                ],
+              ),
+            ),
+
+
+
+
+            SizedBox(
+              height: 16,
+            ),
+
+            if( _openShipHistory )
+
+              Container(
+                margin: EdgeInsets.symmetric(horizontal: 16),
+                decoration: BoxDecoration(
+                    color: Colors.grey[100],
+                    border: Border.all(color: Colors.grey),
+                    borderRadius: BorderRadius.circular(4)
+                ),
+
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Padding(padding: EdgeInsets.all(12.0),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          SizedBox(
+                            width:58,
+                            child: Text("Track\nNumber",
+                              style: TextStyle(
+                                  color: Colors.grey
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            width: 16,
+                          ),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text('TRACKING NUMBER',
+                                  style: TextStyle(
+                                      color: Colors.grey
+                                  ),
+                                ),
+
+                                Padding(
+                                  padding: const EdgeInsets.symmetric(vertical: 12.0),
+                                  child: Row(
+                                    children: [
+
+                                      Text('HCM-0324567891',
+                                        style: TextStyle(
+                                            color: Colors.cyan
+                                        ),
+                                      ),
+
+                                      SizedBox(
+                                        width: 8,
+                                      ),
+
+                                      const  Icon(Icons.ios_share, size: 18,),
+                                    ],
+                                  ),
+                                ),
+                                const Text('Shipping Start date: Oct 18, 2000',
+                                  style: TextStyle(
+                                    color: Colors.grey,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+
+                              ],
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+
+                    Padding(
+                      padding: EdgeInsets.all(12.0),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const SizedBox(
+                            width: 58,
+                            child: Text(
+                              "Services",
+                              style: TextStyle(
+                                  color: Colors.grey
+                              ),
+                            ),
+                          ),
+
+                          SizedBox(width: 16,),
+
+                          Expanded(child: Column(
+                            children: [
+                              const Text(
+                                'OCEAN FREIGHT',
+                                style: TextStyle(
+                                    color: Colors.grey,
+                                    fontWeight: FontWeight.bold
+                                ),
+                              ),
+                              //copy past
+                              const Text(
+                                '\$850',
+                                style: TextStyle(
+                                    height: 1.8,
+                                    fontSize: 24,
+                                    fontWeight: FontWeight.bold
+                                ),
+                              ),
+
+
+
+                              //past here
+                              //remove the const the error will be gone
+                              Text(
+                                'View Details ',
+                                style: TextStyle(
+                                  decoration: TextDecoration.underline,
+                                  color: _accentColor,
+
+                                ),
+                              ),
+
+
+                            ],
+                          ),
+                          )
+                        ],
+                      ),
+
+                    ),
+
+
+                  ],
+                ),
+              ),
+
+
 
           ],
         ),

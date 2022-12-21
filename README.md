@@ -1,4 +1,22 @@
 # flutter_notebook_24
+### EP 1353-1353
+This is 3rd part of this series...
+I'm creating this app UI. I have completed the app till that part. So,  Now I'm
+completing the remaining part of the app UI...  
+
+so start now
+
+add the few pub in the pub.yaml file
+ let start building this part 
+
+implement the action on the button....like on the demo app...show and hide action
+
+so design is completed ...
+thanks for watching  
+
+
+
+
 ### EP 1352-1353
 This is 2nd part of this series..
 thanks for watching and see you in the next videos
