@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_notebook_24/cargo_shipping_mobile/cargo_shipping_app.dart';
+
+import 'ep1354_real_estate_property_app/ep1354_main.dart';
 
 void main() {
-  runApp(const CargoShippingApp());
+  runApp(const RealEstatePropertyApp());
 }

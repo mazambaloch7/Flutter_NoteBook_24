@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_notebook_24/cargo_shipping_mobile/cargo_main.dart';
+
+import 'cargo_main.dart';
 
 class CargoShippingApp extends StatelessWidget {
   const CargoShippingApp({Key? key}) : super(key: key);

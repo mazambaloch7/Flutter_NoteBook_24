@@ -1,4 +1,25 @@
 # flutter_notebook_24
+
+
+in this series I've created the three video...
+
+### EP1354-1356
+
+- Real Estate Property - App UI
+- by Vlad Radchenko
+- https://dribbble.com/shots/19998444-Real-Estate-Property-App-UI
+
+<img src="https://cdn.dribbble.com/userupload/4059194/file/original-055845d45489e4b8508edf0d0f65ce4f.png?compress=1&resize=1600x1200" width="400px"/>
+
+Let start...
+
+thanks for watching ...see you in next video
+
+
+
+
+
+///////////////////////////////End of the below series//////////////////////////////////////////////
 ### EP 1353-1353
 This is 3rd part of this series...
 I'm creating this app UI. I have completed the app till that part. So,  Now I'm
