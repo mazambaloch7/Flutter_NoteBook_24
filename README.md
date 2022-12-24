@@ -1,7 +1,6 @@
 # flutter_notebook_24
 
 
-in this series I've created the three video...
 
 ### EP1354-1356
 
@@ -13,7 +12,12 @@ in this series I've created the three video...
 
 Let start...
 
-thanks for watching ...see you in next video
+thanks for watching ...see you in next time...in the next video I'll create that part of the video
+
+This is second part of this series... let continued from previous part...I've completed 
+at that part....
+
+
 
 
 
@@ -33,20 +37,17 @@ add the few pub in the pub.yaml file
 implement the action on the button....like on the demo app...show and hide action
 
 so design is completed ...
-thanks for watching  
+thanks for watching  my code
 
 
 
 
 ### EP 1352-1353
 This is 2nd part of this series..
-thanks for watching and see you in the next videos
+thanks for watching and see you in the 
 
 
 ### EP 1351-1353
-in this ui we create the three video
-
-next part will be in next video
 
 
 - Cargo Shipping Mobile Version
