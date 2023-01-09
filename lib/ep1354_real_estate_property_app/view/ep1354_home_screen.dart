@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_24/ep1354_real_estate_property_app/view/rep_detail_screen.dart';
 
 
 //the app is run i contin the code..
@@ -22,7 +23,9 @@ class _RealEstateHomeSreenState extends State<RealEstateHomeSreen> {
           itemBuilder: (context, index) {
         return GestureDetector(
           onTap: (){
-
+            Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+              return RealStateDetailScreen();
+            }));
           },
             child: Container(
               margin: EdgeInsets.fromLTRB(8, 8, 8 , 8),
@@ -45,6 +48,8 @@ class _RealEstateHomeSreenState extends State<RealEstateHomeSreen> {
                         crossAxisAlignment: CrossAxisAlignment.start,
 
                         children: [
+
+                          //copy the selected item
 
                         Row(children: [
 

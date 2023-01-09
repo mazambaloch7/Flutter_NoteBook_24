@@ -7,6 +7,10 @@
 - Real Estate Property - App UI
 - by Vlad Radchenko
 - https://dribbble.com/shots/19998444-Real-Estate-Property-App-UI
+In this video we make the clickable list items, and detail screen of the UI 
+- Let starts
+
+Thanks for watching keep support me....
 
 <img src="https://cdn.dribbble.com/userupload/4059194/file/original-055845d45489e4b8508edf0d0f65ce4f.png?compress=1&resize=1600x1200" width="400px"/>
 
