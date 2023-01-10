@@ -230,7 +230,7 @@ class _RealEstateHomeSreenState extends State<RealEstateHomeSreen> {
         showSelectedLabels: false,
         currentIndex: _menuindex,
         onTap: (idx)=> setState(() => _menuindex = idx,),
-
+        //.
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.apps_outlined),
