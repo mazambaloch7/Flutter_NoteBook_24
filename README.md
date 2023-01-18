@@ -1,6 +1,22 @@
 # flutter_notebook_24
 
 
+ ## Ep1001--BMI
+In this App We will create the full BMI Calculator...like show in the emulator
+check the demo
+
+
+Sorry this is not Ui. It is Full App video...So Create with differnt Name
+
+in this app we create this app with the widgets.
+
+so Now create the different folder
+
+let start
+
+create the reuseable cards
+
+
 
 ### EP1354-1356
 
