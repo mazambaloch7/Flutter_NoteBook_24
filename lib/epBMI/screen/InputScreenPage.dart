@@ -117,19 +117,20 @@ class _InputPageState extends State<InputPage> {
 
                             min: 60,
                             max: 300,
-                          )),
-
+                          ),
+                      ),
+                      //slider theme
 
 
 
 
                     ]
-                ),
+                ),//column
               ),
 
 
           ),
-          //
+          ////
 
           Expanded(
 
